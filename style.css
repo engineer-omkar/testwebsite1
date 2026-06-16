@@ -639,7 +639,11 @@ nav a:hover{color:#8b7cff}
 /* MOBILE */
 
 @media(max-width:768px){
-
+.brand h3{
+  font-size:14px;
+  letter-spacing:7px;
+  font-weight:600;
+}
   /* HERO SMALL ONLY */
   .hero-scroll{height:100vh}
 
