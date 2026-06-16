@@ -749,126 +749,107 @@ nav a:hover{color:#8b7cff}
   }
 
   /* SERVICES RING MOBILE FIX */
-  .service-ring-section{
-    min-height:auto;
-    padding:85px 16px;
-  }
+  /* MOBILE SERVICE RING FIX */
 
-  .service-shell{
-    width:100%;
-    min-height:auto;
-    padding:26px 18px 30px;
-    gap:36px;
-    border-radius:18px;
-    grid-template-columns:1fr;
-    overflow:hidden;
-  }
+@media(max-width:768px){
 
-  .ring-area{
-    width:300px;
-    height:300px;
-    transform:none;
-    margin:0 auto 25px;
-  }
+.service-ring-section{
+  padding:60px 12px;
+  overflow:hidden;
+}
 
-  .orbit-line{
-    inset:50px;
-  }
+.service-shell{
+  width:100%;
+  max-width:100%;
+  padding:24px 12px;
+  overflow:hidden;
+  border-radius:18px;
+  gap:30px;
+}
 
-  .center-glow{
-    width:8px;
-    height:8px;
-  }
+.ring-area{
+  width:260px;
+  height:260px;
+  margin:0 auto;
+}
 
-  .service-node{
-    width:60px;
-    height:60px;
-  }
+.orbit-line{
+  inset:40px;
+}
 
-  .service-node span{
-    font-size:18px;
-  }
+.service-node{
+  width:52px;
+  height:52px;
+}
 
-  .service-node small{
-    top:67px;
-    font-size:9px;
-    letter-spacing:.02em;
-  }
+.service-node span{
+  font-size:16px;
+}
 
-  /* New perfect circle positions for 300px ring */
-  .service-node[data-id="web"]{
-    left:150px !important;
-    top:48px !important;
-  }
+.service-node small{
+  font-size:8px;
+  top:58px;
+}
 
-  .service-node[data-id="deploy"]{
-    left:238px !important;
-    top:98px !important;
-  }
+/* TOP */
+.service-node[data-id="web"]{
+  left:130px !important;
+  top:25px !important;
+}
 
-  .service-node[data-id="hosting"]{
-    left:238px !important;
-    top:202px !important;
-  }
+/* TOP RIGHT */
+.service-node[data-id="deploy"]{
+  left:220px !important;
+  top:78px !important;
+}
 
-  .service-node[data-id="support"]{
-    left:150px !important;
-    top:252px !important;
-  }
+/* BOTTOM RIGHT */
+.service-node[data-id="hosting"]{
+  left:220px !important;
+  top:182px !important;
+}
 
-  .service-node[data-id="data"]{
-    left:62px !important;
-    top:202px !important;
-  }
+/* BOTTOM */
+.service-node[data-id="support"]{
+  left:130px !important;
+  top:235px !important;
+}
 
-  .service-node[data-id="seo"]{
-    left:62px !important;
-    top:98px !important;
-  }
+/* BOTTOM LEFT */
+.service-node[data-id="data"]{
+  left:40px !important;
+  top:182px !important;
+}
 
-  .service-card{
-    min-height:auto;
-    padding:30px 22px;
-    border-radius:18px;
-  }
+/* TOP LEFT */
+.service-node[data-id="seo"]{
+  left:40px !important;
+  top:78px !important;
+}
 
-  .close{
-    top:14px;
-    right:18px;
-    font-size:28px;
-  }
+.service-card{
+  width:100%;
+  padding:24px 18px;
+}
 
-  .badge{
-    font-size:13px;
-    padding:7px 15px;
-    margin-bottom:18px;
-  }
+.service-card h2{
+  font-size:28px;
+}
 
-  .service-card h2{
-    font-size:34px;
-    margin-bottom:16px;
-  }
+.service-card p{
+  font-size:14px;
+}
 
-  .service-card p{
-    font-size:15px;
-    line-height:1.75;
-    max-width:100%;
-  }
+.features{
+  grid-template-columns:1fr;
+  gap:12px;
+}
 
-  .line{
-    width:100%;
-    margin:26px 0 20px;
-  }
+.browser-box{
+  display:none;
+}
 
-  .features{
-    grid-template-columns:1fr;
-    gap:14px;
-    font-size:14px;
-  }
-
-  .browser-box{
-    display:none;
-  }
+}
 
   /* ABOUT MOBILE - KEEP WORKING */
   .about-section{
