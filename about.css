@@ -1,0 +1,301 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#000;
+  color:#fff;
+  font-family:'Inter', sans-serif;
+  overflow-x:hidden;
+}
+
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:86px;
+  padding:0 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+  background:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand-mark{
+  width:40px;
+  height:40px;
+  border:1px solid rgba(255,255,255,.75);
+  display:grid;
+  place-items:center;
+  font-size:23px;
+}
+
+.brand h3{
+  font-size:14px;
+  letter-spacing:6px;
+  font-weight:500;
+}
+
+.brand span{
+  display:block;
+  font-size:10px;
+  letter-spacing:3px;
+  color:#888;
+}
+
+nav{
+  display:flex;
+  gap:38px;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav .active{
+  color:#8b7cff;
+}
+
+.talk-btn{
+  color:#fff;
+  text-decoration:none;
+  padding:14px 28px;
+  border:1px solid rgba(255,255,255,.3);
+  border-radius:50px;
+  font-size:14px;
+}
+
+/* ABOUT HERO SAME LIKE IMAGE */
+
+.about-hero{
+  position:relative;
+  min-height:100vh;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  padding-left:6vw;
+  background:#000;
+}
+
+.about-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+}
+
+.about-text-box{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+}
+
+.mini-title{
+  font-size:13px;
+  letter-spacing:.45em;
+  color:#fff;
+  font-weight:300;
+}
+
+.mini-line{
+  width:60px;
+  height:1px;
+  background:rgba(255,255,255,.85);
+  margin:28px 0 50px;
+}
+
+.about-text-box h1{
+  font-size:clamp(46px,5vw,78px);
+  line-height:1.08;
+  letter-spacing:-.055em;
+  font-weight:300;
+  margin-bottom:38px;
+}
+
+.about-text-box h1 span{
+  color:rgba(255,255,255,.32);
+}
+
+.desc{
+  max-width:640px;
+  color:rgba(255,255,255,.68);
+  font-size:18px;
+  line-height:1.9;
+  font-weight:300;
+  margin-bottom:60px;
+}
+
+.simple-link{
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:.35em;
+}
+
+/* WHY CHOOSE EXACT MINIMAL */
+
+.choose-section{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:40% 60%;
+  gap:40px;
+  padding:110px 6vw;
+  background:#000;
+  align-items:center;
+}
+
+.choose-left h2{
+  font-size:clamp(42px,4.4vw,68px);
+  line-height:1.08;
+  letter-spacing:-.055em;
+  font-weight:300;
+  margin-bottom:45px;
+}
+
+.choose-left h2 span{
+  color:rgba(255,255,255,.28);
+}
+
+.choose-left p{
+  color:rgba(255,255,255,.68);
+  font-size:17px;
+  line-height:1.9;
+  max-width:460px;
+  margin-bottom:60px;
+}
+
+.choose-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(255,255,255,.12);
+  border-left:1px solid rgba(255,255,255,.12);
+}
+
+.choose-card{
+  min-height:260px;
+  padding:34px 34px;
+  border-right:1px solid rgba(255,255,255,.12);
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.icon{
+  width:58px;
+  height:58px;
+  border:1px solid rgba(255,255,255,.7);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:24px;
+  margin-bottom:34px;
+}
+
+.choose-card h3{
+  font-size:24px;
+  font-weight:300;
+  margin-bottom:16px;
+}
+
+.choose-card p{
+  font-size:15px;
+  line-height:1.8;
+  color:rgba(255,255,255,.62);
+  max-width:240px;
+}
+
+.contact-mini{
+  min-height:60vh;
+  background:#000;
+  padding:120px 6vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.contact-mini h2{
+  font-size:clamp(42px,5vw,76px);
+  font-weight:300;
+  line-height:1.08;
+  letter-spacing:-.055em;
+  margin:40px 0;
+}
+
+footer{
+  padding:35px 6vw;
+  color:#777;
+  border-top:1px solid rgba(255,255,255,.08);
+  font-size:14px;
+}
+
+/* SCROLL ANIMATION */
+
+.reveal{
+  opacity:0;
+  transform:translateY(45px);
+  transition:opacity .9s ease, transform .9s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:1000px){
+  .navbar{
+    padding:0 24px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .talk-btn{
+    padding:12px 18px;
+  }
+
+  .about-hero{
+    padding:120px 28px;
+    align-items:center;
+  }
+
+  .about-bg{
+    opacity:.45;
+  }
+
+  .choose-section{
+    grid-template-columns:1fr;
+    padding:90px 28px;
+  }
+
+  .choose-grid{
+    grid-template-columns:1fr;
+  }
+
+  .choose-card{
+    min-height:auto;
+  }
+
+  .desc,
+  .choose-left p{
+    font-size:16px;
+  }
+}
