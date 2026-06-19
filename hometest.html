@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Services Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="brand">
+  <div class="brand-mark">B</div>
+  <div>
+    <h3>BROWSEVERSE</h3>
+    <span>IT SOLUTIONS</span>
+  </div>
+</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="#contact" class="talk-btn">Let’s Talk →</a>
+</header>
+
+<section class="hero-scroll">
+  <div class="hero-sticky">
+
+    <img src="assets/frame1.png" class="hero-frame frame1 active" alt="">
+    <img src="assets/frame2.png" class="hero-frame frame2" alt="">
+    <img src="assets/frame3.png" class="hero-frame frame3" alt="">
+    <img src="assets/frame4.png" class="hero-frame frame4" alt="">
+    <img src="assets/frame5.png" class="hero-frame frame5" alt="">
+    <img src="assets/frame6.png" class="hero-frame frame6" alt="">
+
+    <img src="assets/frame5.png" class="mobile-hero" alt="">
+
+    <div class="hero-content content-one">
+      <p class="tag">IT SOLUTIONS THAT DRIVE GROWTH</p>
+
+      <h1>
+        Build. Deploy.<br>
+        Host. <span>Manage.</span>
+      </h1>
+
+      <p class="hero-desc">
+        End-to-end IT services to build, deploy,
+        host and manage your digital presence.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="main-btn">Get Free Consultation →</a>
+        <a href="#services" class="play-btn">See How It Works</a>
+      </div>
+    </div>
+
+    <div class="scroll-down">
+      <span></span>
+      Scroll Down
+    </div>
+
+  </div>
+</section>
+
+<section id="services" class="service-ring-section">
+  <div class="service-shell">
+
+    <div class="ring-area">
+      <div class="center-glow"></div>
+      <div class="orbit-line"></div>
+
+      <button class="service-node active" data-id="web" style="--x:180px;--y:45px;">
+        <span>&lt;/&gt;</span>
+        <small>WEB<br>DEVELOPMENT</small>
+      </button>
+
+      <button class="service-node" data-id="deploy" style="--x:297px;--y:112px;">
+        <span>⇧</span>
+        <small>DEPLOYMENT</small>
+      </button>
+
+      <button class="service-node" data-id="hosting" style="--x:297px;--y:248px;">
+        <span>▤</span>
+        <small>HOSTING</small>
+      </button>
+
+      <button class="service-node" data-id="support" style="--x:180px;--y:315px;">
+        <span>☏</span>
+        <small>SUPPORT</small>
+      </button>
+
+      <button class="service-node" data-id="data" style="--x:63px;--y:248px;">
+        <span>◔</span>
+        <small>DATA<br>MANAGE</small>
+      </button>
+
+      <button class="service-node" data-id="seo" style="--x:63px;--y:112px;">
+        <span>⌕</span>
+        <small>SEO</small>
+      </button>
+    </div>
+
+    <div class="service-card open" id="serviceCard">
+      <button class="close">×</button>
+      <span class="badge" id="badge">01</span>
+
+      <h2 id="cardTitle">Web Development</h2>
+
+      <p id="cardText">
+        We build fast, secure and scalable websites that deliver seamless digital experiences.
+      </p>
+
+      <div class="line"></div>
+
+      <div class="features" id="features">
+        <span>✓ Custom Websites</span>
+        <span>✓ Responsive Design</span>
+        <span>✓ E-commerce Solutions</span>
+        <span>✓ Performance Optimized</span>
+      </div>
+
+      <div class="browser-box">
+        <div class="browser-top"></div>
+        <div class="code-icon" id="previewIcon">&lt;/&gt;</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <img src="assets/aboutbg.png" class="about-bg" alt="About background">
+
+  <div class="about-content reveal">
+    <p class="about-label">ABOUT US</p>
+    <div class="small-line"></div>
+
+    <h2>
+      We Build Digital<br>
+      Experiences <span>That Matter.</span>
+    </h2>
+
+    <p class="about-text">
+      We’re a team of creators, developers and problem solvers
+      who turn ideas into powerful digital solutions.
+      Our focus is simple — deliver exceptional quality,
+      fast, reliable and future ready.
+    </p>
+
+    <a href="about.html" class="learn-more">
+      <span>→</span> LEARN MORE
+    </a>
+  </div>
+</section>
+
+<section id="process" class="section">
+  <p class="tag">OUR PROCESS</p>
+  <h2>From idea to live platform.</h2>
+
+  <div class="process-grid">
+    <div>
+      <span>01</span>
+      <h3>Discover</h3>
+      <p>We understand your goals, business needs, target audience and project requirements before starting development.</p>
+    </div>
+
+    <div>
+      <span>02</span>
+      <h3>Design</h3>
+      <p>We create clean, premium and mobile-friendly UI designs focused on user experience and brand trust.</p>
+    </div>
+
+    <div>
+      <span>03</span>
+      <h3>Build</h3>
+      <p>We develop fast, secure and responsive websites using modern technologies with performance in mind.</p>
+    </div>
+
+    <div>
+      <span>04</span>
+      <h3>Launch</h3>
+      <p>We deploy, host, configure domain, setup SSL, optimize speed and manage support after launch.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+
+  <div class="contact-left">
+    <p class="contact-tag">CONTACT US</p>
+    <div class="contact-line"></div>
+
+    <h2>
+      Let's Build<br>
+      Something <span>Great.</span>
+    </h2>
+
+    <p class="contact-text">
+      Have a project in mind or just want to say hello?
+      We'd love to hear from you.
+    </p>
+
+    <div class="pc-contact-info">
+      <p>omkarb817@gmail.com</p>
+      <p>+91 8767084050</p>
+      <p>Pune, Maharashtra, India</p>
+    </div>
+
+    <div class="pc-social-links">
+      <a href="#">LINKEDIN</a>
+      <a href="#">TWITTER</a>
+      <a href="#">GITHUB</a>
+      <a href="#">INSTAGRAM</a>
+    </div>
+  </div>
+
+  <div class="contact-right">
+    <form class="contact-form">
+
+      <div class="row">
+        <div class="field">
+          <label>YOUR NAME</label>
+          <input type="text">
+        </div>
+
+        <div class="field">
+          <label>YOUR EMAIL</label>
+          <input type="email">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>SUBJECT</label>
+        <input type="text">
+      </div>
+
+      <div class="field">
+        <label>YOUR MESSAGE</label>
+        <textarea></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">
+        SEND MESSAGE →
+      </button>
+
+    </form>
+
+    <div class="mobile-contact-info">
+      <p>omkarb817@gmail.com</p>
+      <p>+91 8767084050</p>
+      <p>Pune, Maharashtra, India</p>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
