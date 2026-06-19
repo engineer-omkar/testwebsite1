@@ -20,59 +20,65 @@ body{
   top:0;
   left:0;
   width:100%;
-  height:92px;
-  padding:0 64px;
+  height:86px;
+  padding:0 60px;
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  z-index:100;
-  background:linear-gradient(to bottom,rgba(0,0,0,.85),rgba(0,0,0,0));
+  align-items:center;
+  z-index:1000;
+  background:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,0));
 }
 
-.brand{display:flex;align-items:center;gap:14px}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
 
 .brand-mark{
-  width:42px;
-  height:42px;
+  width:40px;
+  height:40px;
   border:1px solid rgba(255,255,255,.75);
   display:grid;
   place-items:center;
-  font-size:28px;
-  font-weight:600;
+  font-size:23px;
 }
 
 .brand h3{
   font-size:14px;
-  letter-spacing:7px;
-  font-weight:600;
+  letter-spacing:6px;
+  font-weight:500;
 }
 
 .brand span{
   display:block;
   font-size:10px;
-  letter-spacing:4px;
-  color:#aaa;
-  margin-top:3px;
+  letter-spacing:3px;
+  color:#888;
 }
 
-nav{display:flex;gap:42px}
+nav{
+  display:flex;
+  gap:38px;
+}
 
 nav a{
   color:#fff;
   text-decoration:none;
-  font-size:15px;
-  opacity:.9;
+  font-size:14px;
 }
 
-nav a:hover{color:#8b7cff}
+nav .active{
+  color:#8b7cff;
+}
 
 .talk-btn{
   color:#fff;
   text-decoration:none;
-  padding:17px 32px;
-  border:1px solid rgba(255,255,255,.35);
+  padding:14px 28px;
+  border:1px solid rgba(255,255,255,.3);
   border-radius:50px;
-  font-size:15px;
+  font-size:14px;
 }
 
 /* HERO */
@@ -627,72 +633,45 @@ nav a:hover{color:#8b7cff}
 
 /* TABLET */
 
-/* TABLET */
-
 @media(max-width:1000px){
-  .navbar{
-    height:78px;
-    padding:0 22px;
-  }
-
-  nav{
-    display:none;
-  }
-
-  .brand{
-    gap:10px;
-  }
-
-  .brand-mark{
-    width:36px;
-    height:36px;
-    font-size:21px;
-  }
-
-  .brand h3{
-  font-size:14px;
-  letter-spacing:7px;
-  font-weight:600;
-}
-
-
-  .brand span{
-    font-size:8px;
-    letter-spacing:2px;
-  }
-
-  .talk-btn{
-    padding:11px 16px;
-    font-size:12px;
-  }
-
-  .service-shell{
-    grid-template-columns:1fr;
-    padding:28px;
-  }
-
-  .browser-box{
-    display:none;
-  }
+  .navbar{padding:0 24px}
+  nav{display:none}
+  .brand h3{font-size:18px}
+  .talk-btn{padding:12px 18px}
+  .service-shell{grid-template-columns:1fr;padding:28px}
+  .browser-box{display:none}
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-  /* HERO MOBILE */
-  .hero-scroll{
-    height:100vh;
+.brand h3{
+  font-size:14px;
+  letter-spacing:6px;
+  font-weight:500;
+}
+
+.navbar{
+    padding:0 24px;
   }
+
+  nav{
+    display:none;
+  }
+
+  .talk-btn{
+    padding:12px 18px;
+  }
+  /* HERO SMALL ONLY */
+  .hero-scroll{height:100vh}
 
   .hero-sticky{
     position:relative;
     height:100vh;
   }
 
-  .hero-frame{
-    display:none;
-  }
+  .hero-frame{display:none}
 
   .mobile-hero{
     display:block;
@@ -705,8 +684,8 @@ nav a:hover{color:#8b7cff}
   }
 
   .hero-content{
-    left:22px;
-    top:62%;
+    left:68px;
+    top:42%;
     max-width:250px;
     z-index:5;
   }
@@ -742,118 +721,13 @@ nav a:hover{color:#8b7cff}
     font-size:10px;
   }
 
-  .hero-buttons .play-btn{
-    font-size:10px;
-  }
+  .hero-buttons .play-btn{font-size:10px}
 
-  .scroll-down{
-    display:none;
-  }
+  .scroll-down{display:none}
 
-  /* SERVICES RING MOBILE FIX */
-  /* MOBILE SERVICE RING FIX */
+  
 
-@media(max-width:768px){
-
-.service-ring-section{
-  padding:60px 12px;
-  overflow:hidden;
-}
-
-.service-shell{
-  width:100%;
-  max-width:100%;
-  padding:24px 12px;
-  overflow:hidden;
-  border-radius:18px;
-  gap:30px;
-}
-
-.ring-area{
-  width:260px;
-  height:260px;
-  margin:0 auto;
-}
-
-.orbit-line{
-  inset:40px;
-}
-
-.service-node{
-  width:52px;
-  height:52px;
-}
-
-.service-node span{
-  font-size:16px;
-}
-
-.service-node small{
-  font-size:8px;
-  top:58px;
-}
-
-/* TOP */
-.service-node[data-id="web"]{
-  left:130px !important;
-  top:25px !important;
-}
-
-/* TOP RIGHT */
-.service-node[data-id="deploy"]{
-  left:220px !important;
-  top:78px !important;
-}
-
-/* BOTTOM RIGHT */
-.service-node[data-id="hosting"]{
-  left:220px !important;
-  top:182px !important;
-}
-
-/* BOTTOM */
-.service-node[data-id="support"]{
-  left:130px !important;
-  top:235px !important;
-}
-
-/* BOTTOM LEFT */
-.service-node[data-id="data"]{
-  left:40px !important;
-  top:182px !important;
-}
-
-/* TOP LEFT */
-.service-node[data-id="seo"]{
-  left:40px !important;
-  top:78px !important;
-}
-
-.service-card{
-  width:100%;
-  padding:24px 18px;
-}
-
-.service-card h2{
-  font-size:28px;
-}
-
-.service-card p{
-  font-size:14px;
-}
-
-.features{
-  grid-template-columns:1fr;
-  gap:12px;
-}
-
-.browser-box{
-  display:none;
-}
-
-}
-
-  /* ABOUT MOBILE - KEEP WORKING */
+  /* ABOUT MOBILE BIGGER */
   .about-section{
     position:relative;
     min-height:100vh;
@@ -902,19 +776,15 @@ nav a:hover{color:#8b7cff}
     margin-bottom:55px;
   }
 
-  .learn-more{
-    font-size:14px;
-  }
+  .learn-more{font-size:14px}
 
-  /* PROCESS MOBILE */
+  /* PROCESS MOBILE BIGGER */
   .section{
     min-height:auto;
     padding:100px 28px;
   }
 
-  .section h2{
-    font-size:44px;
-  }
+  .section h2{font-size:44px}
 
   .process-grid{
     display:flex;
@@ -926,9 +796,7 @@ nav a:hover{color:#8b7cff}
     scrollbar-width:none;
   }
 
-  .process-grid::-webkit-scrollbar{
-    display:none;
-  }
+  .process-grid::-webkit-scrollbar{display:none}
 
   .process-grid div{
     min-width:88%;
@@ -937,15 +805,10 @@ nav a:hover{color:#8b7cff}
     padding:34px;
   }
 
-  .process-grid h3{
-    font-size:30px;
-  }
+  .process-grid h3{font-size:30px}
+  .process-grid p{font-size:16px}
 
-  .process-grid p{
-    font-size:16px;
-  }
-
-  /* CONTACT MOBILE */
+  /* CONTACT MOBILE BIGGER */
   .contact-section{
     min-height:auto;
     display:flex;
@@ -955,30 +818,18 @@ nav a:hover{color:#8b7cff}
     gap:0;
   }
 
-  .contact-left{
-    max-width:100%;
-  }
+  .contact-left{max-width:100%}
 
-  .contact-tag{
-    font-size:13px;
-  }
+  .contact-tag{font-size:13px}
 
-  .contact-line{
-    margin:28px auto 45px;
-  }
+  .contact-line{margin:28px auto 45px}
 
-  .contact-left h2{
-    font-size:44px;
-  }
+  .contact-left h2{font-size:44px}
 
-  .contact-text{
-    font-size:16px;
-  }
+  .contact-text{font-size:16px}
 
   .pc-contact-info,
-  .pc-social-links{
-    display:none;
-  }
+  .pc-social-links{display:none}
 
   .row{
     grid-template-columns:1fr;
@@ -1000,7 +851,8 @@ nav a:hover{color:#8b7cff}
 
   .mobile-contact-info p{
     font-size:13px;
-    color:#ddd;
+  letter-spacing:0.14em;
+  color:#ddd;
   }
 
   .send-btn{
